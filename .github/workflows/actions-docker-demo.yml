@@ -7,7 +7,12 @@ jobs:
     container:
       image: martinboers/plcnext-build-environment:axcf2152-2022.6
     steps:
-      - name: List files in container
-        run: ls -lsah
       - name: List installed SDKs
         run: plcncli get sdks
+      - name: Clone repository
+        uses: action/checkout@v2
+      - name: Create new acf project and push it to github
+        run: |
+          plcncli new acfproject
+          git commit -am "Create project from template"
+          git push
