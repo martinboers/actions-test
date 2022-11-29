@@ -12,8 +12,8 @@ jobs:
       - name: Create new acf project and push it to github
         run: |
           plcncli new acfproject
-          git config user.email=$email
-          git config user.name=$name
+          git config user.email $email
+          git config user.name $name
           git add --all --verbose
           git commit -am "Create project from template"
           git push
