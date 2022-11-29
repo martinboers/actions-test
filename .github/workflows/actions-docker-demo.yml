@@ -7,8 +7,6 @@ jobs:
     container:
       image: martinboers/plcnext-build-environment:axcf2152-2022.6
     steps:
-      - name: List installed SDKs
-        run: plcncli get sdks
       - name: Clone repository
         uses: actions/checkout@v2
       - name: Create new acf project and push it to github
@@ -17,5 +15,5 @@ jobs:
           git config user.email "martin.boers@gmail.com"
           git config --global user.name "Martin Boers"
           git add --all --verbose
-          git commit -am "Create project from template"
+          git -c user.name=$name -c user.email=$email commit -am "Create project from template"
           git push
