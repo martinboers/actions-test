@@ -1,0 +1,15 @@
+name: Actions Docker Demo
+run-name: ${{ github.actor }} is testing GitHub Actions with a docker image
+on:
+  push:
+    branches: [master]
+jobs:
+  container-test-job:
+    runs-on: ubuntu-latest
+    container:
+      image: martinboers/plcnext-build-environment:axcf2152-2022.6
+    steps:
+      - name: List files in container
+        run: ls -lsah
+      - name: List installed SDKs
+        run: plcncli get sdks
