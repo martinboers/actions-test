@@ -2,7 +2,7 @@ name: Build Project
 run-name: ${{ github.actor }} is building the project
 on: [workflow_dispatch]
 jobs:
-  container-test-job:
+  project-build-job:
     runs-on: ubuntu-latest
     container:
       image: martinboers/plcnext-build-environment:axcf2152-2022.6
