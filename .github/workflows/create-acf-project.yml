@@ -2,7 +2,7 @@ name: Create ACF Project
 run-name: ${{ github.actor }} is creating a new ACF project
 on: [workflow_dispatch]
 jobs:
-  container-test-job:
+  project-create-job:
     runs-on: ubuntu-latest
     container:
       image: martinboers/plcnext-cli:2022.6
