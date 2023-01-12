@@ -12,7 +12,13 @@ This project demonstrates how Github Actions can be used to:
 - Open this github repository in a web browser (if you're not there already).
 - Click the green "Use this template" button, and select "Create a new repository".
 - Fill out the fields and click "Create repository from template".
-- In the new repository, select "Actions" from the menu.
+- In the new repository, select "Settings", then "Actions", then "General".
+- Make sure that Github Actions are allowed to create and approve pull requests:
+
+![image](https://user-images.githubusercontent.com/13133969/212088227-5ffa41ad-fec1-4baf-a4f4-d0c752471f74.png)
+
+- Don't forget to click "Save" when done.
+- Now select "Actions" from the menu.
 - Run the workflow named "Create ACF Project".
 
 => A new ACF project is automatically created using the `acfproject` PLCnext CLI project template, and the project source files are added to the repository.
