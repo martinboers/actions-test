@@ -3,7 +3,7 @@
 This project demonstrates how Github Actions can be used to:
 
 - generate a new C++ project, targeting the PLCnext Runtime, from a PLCnext CLI project template, and
-- build a C++ project that targets the PLCnext Runtime.
+- build a C++ project that targets the PLCnext Runtime ...
 
 ... *without* installing the PLCnext Command Line Interface (CLI) or a PLCnext Software Development Kit (SDK) on your own development machine.
 
