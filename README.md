@@ -13,9 +13,9 @@ This project demonstrates how Github Actions can be used to:
 - Click the green "Use this template" button, and select "Create a new repository".
 - Fill out the fields and click "Create repository from template".
 - In the new repository, select "Settings", then "Actions", then "General".
-- Make sure that Github Actions are allowed to create and approve pull requests:
+- Grant the GITHUB_TOKEN read and write permissions when running workflows in this repostory:
 
-![image](https://user-images.githubusercontent.com/13133969/212088227-5ffa41ad-fec1-4baf-a4f4-d0c752471f74.png)
+![image](https://user-images.githubusercontent.com/13133969/222363379-0ecfc03c-e22d-4926-8186-c3744fb8cd68.png)
 
 - Don't forget to click "Save" when done.
 - Now select "Actions" from the menu.
